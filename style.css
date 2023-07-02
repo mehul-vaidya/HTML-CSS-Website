@@ -2,7 +2,7 @@ body {
   background-color: #FFFFD2;
 }
 
-* {
+*{
   margin: 0px;
   padding: 0px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
@@ -35,24 +35,21 @@ nav ul li a {
 }
 
 main {
-  width: 100vw;
-  height: 75vh;
   background-color: #C5FAD5;
+  height: 75vh;
 }
 
-main section {
-  width: 100vw;
-  height: 75vh;
+main section { 
   background-color: #C5FAD5;
   text-align: left;
+  height: 75vh;
 }
 
 main section article {
-  width: 100vw;
-  height: 25vh;
   background-color: #C5FAD5;
   font-size: 3vh;
-
+  padding-left: 2vw;
+  height: 75vh;
 }
 
 main section aside {
@@ -60,12 +57,12 @@ main section aside {
   height: 10vh;
   background-color: gray;
   float: right;
-
 }
 
 footer {
   width: 100vw;
-  height: 10vh;
   background-color: #FFFFD2;
   font-size: 3vh;
+  padding-left: 2vw;
+  height: 10vh;
 }

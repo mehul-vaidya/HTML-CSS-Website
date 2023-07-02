@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>CSS Fonts and Display</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .div1 {
+            width: 5vw;
+            height: 5vh;
+            background-color: green ;
+        }
+        .div2 {
+            width: 5vw;
+            height: 5vh;
+            background-color: yellow ;
+        }
+        .div3 {
+            width: 5vw;
+            height: 5vh;
+            background-color: red ;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <b>CSS Fonts and Display</b>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="HTML_Intro.html">HTML</a></li>
+            <li><a href="CSS_Intro.html">CSS</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <b>Display Property</b>
+                Display property is used to determine whether an element is treated as a block/inline element and the layout used for its children(flex/grid/etc.). <br>
+                Below are three div. Div are block level element, which consume full available width. 
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                To make them in one line , we have to set display: inline-block <br>
+                Remember by making it just display:inline, height and width property will not work <br>
+                <div class="div1" style="display:inline-block;"></div><div class="div2" style="display:inline-block;"></div><div class="div3" style="display:inline-block;"></div> <br>
+
+                <b>CSS Font</b> <br>
+                You can set your preferred font for text. We have set Comic Sans font for all text displayed in this website.
+                <pre>
+                *{
+                    font-family: "Comic Sans MS", "Comic Sans", cursive;
+                }</pre>
+
+                
+                Click <a href="CSS_Fonts_Display.html">here</a> for next tutorial <br>
+                Click <a href="CSS_Box_Model.html">here</a> for previous tutorial
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;Delawebapp All rights reserved. <br>
+        Contact mehulvaidya94@gmail.com for more information.
+    </footer>
+</body>
+
+</html>

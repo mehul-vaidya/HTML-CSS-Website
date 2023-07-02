@@ -11,12 +11,11 @@
     <title>CSS Box Model</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
         .div1{
-            background-image: url('img/taj_mahal.jpg');
-            background-repeat : no-repeat;
-            width: 40vw;
+            width: 30vw;
             height: 30vh;
+            max-height:  30vh;
+            max-width: 30vw;
         }
     </style>
 </head>
@@ -36,11 +35,18 @@
     <main>
         <section>
             <article>
-                CSS Box model is shown in below image. <br>
-                <div class="div2">
-                </div></br>
-
-                Click <a href="CSS_Box_Model.html">here</a> for next tutorial
+                <b>CSS Box model</b> is shown in below image. <br>
+                
+                <img src="img/box_model.png" alt="box model" class="div1"> <br>
+                <b>Margin Collaps</b> <br>
+                If div1 and div2 are adjusant elements. div1 has margin 20px and div2 has margin 30px. <br>
+                Then effective margin between them is 30px. <br>
+                <b>Box Sizing</b> <br>
+                box-sizing property allows us to include the padding and border in element's total width and height. <br>
+                Default value of this property is content-box. Need to change it to border-box.
+                &nbsp;<br />
+                Click <a href="CSS_Fonts_Display.html">here</a> for next tutorial<br>
+                Click <a href="CSS_Colors_Background.html">here</a> for previous tutorial
             </article>
         </section>
     </main>
@@ -49,4 +55,5 @@
         Contact mehulvaidya94@gmail.com for more information.
     </footer>
 </body>
+
 </html>
