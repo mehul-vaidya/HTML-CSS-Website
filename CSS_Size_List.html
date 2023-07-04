@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>CSS Size & List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .parent {
+            font-size: min(4vw, 4vh);
+            color: red;
+        }
+
+        .child1 {
+            font-size: 2em;
+            color: red;
+        }
+
+        .child2 {
+            font-size: 2rem;
+            color: red;
+        }
+
+        ul {
+            list-style: square inside url(img/arrow.png);
+           
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <b>CSS Size & List</b>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="HTML_Intro.html">HTML</a></li>
+            <li><a href="CSS_Intro.html">CSS</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <b>Size</b> can be specified using px. But it ties website to particular display size. Instead use
+                relative sizing option. <br>
+                <b>vw & vh</b> : viewport width and viewport height are calulcated with respect to device screen size.
+                <br>
+                <b>rem</b>: font size relative to font size for root element (html) <br>
+                <b>em</b>: font size relative to parent element font size <br>
+                <div class="parent">
+                    This parent div has font size of min(2vw,2vh);
+                    <div class="child1">
+                        This child div has font size 2em
+                    </div>
+                    <div class="child2">
+                        This child div has font size 2rem
+                    </div>
+                </div> <br>
+
+                <b>list</b>: list can be styled using list style attribute as follows <br>
+                list-style: square inside url(img/arrow.png);
+                <br>
+                <ul>
+                    <li>list item 1 </li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ul>
+
+                Click <a href="CSS_Position_ZIndex.html">here</a> for next tutorial <br>
+                Click <a href="CSS_Fonts_Display.html">here</a> for previous tutorial
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;Delawebapp All rights reserved. <br>
+        Created by <b>Mehul Vaidya</b>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>CSS Position & Z-Index</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .static_div{
+            left: 50vw;
+            color: red;
+            background-color: aqua;
+            width: 50vw;;
+        }
+        .relative_div{
+            left: 50vw;
+            color: red;
+            background-color: aqua;
+            position: relative;
+            width: 50vw;
+        }
+        .absolute_div{
+            bottom: 0;
+            right : 0;
+            color: red;
+            background-color: aqua;
+            position: absolute;
+            width: 50vw;
+        }
+        img{
+            position: absolute;
+            left: 0px;
+            bottom: 35vh;
+            z-index: 1;  
+            opacity: 0.8; 
+            width: 50vw;
+            height : 10vh;   
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <b>CSS Position & Z-Index</b>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="HTML_Intro.html">HTML</a></li>
+            <li><a href="CSS_Intro.html">CSS</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <b>Position property :</b> is used to manupulate the location of an element. Following are possible values. <br>
+                <b>static :</b> The default position. top/bottom/left/right/z-index has no effect <br>
+                <b>relative :</b> Element will be in original position. top/bottom/left/right/z-index will work <br>
+                <b>absolute :</b> Element will work as per first non-static parent. top/bottom/left/right/z-index will work<br>
+                <b>fixed :</b> Element will be fixed at one position.<br>
+                <b>sticky :</b> Element will be fixed related to scroll bar.<br>
+                <br>&nbsp;<br>
+                <div class="static_div">
+                    This is static div. left propert is applied on it but it will not work. You can verify this using inspect option.
+                </div>
+                <div class="relative_div">
+                    This is relative div. left propert is applied on it , which is working correctly.
+                </div>
+                <div class="absolute_div">
+                    This is absolute div. 
+                </div>
+                <br>
+                <b>Z-Index :</b> The Z-Index property specifies the stack order of element
+                <img src="img/bg.jpg" alt="bg">
+                <p>This text is below image. Z-Index for image is 1</p>
+                   
+                
+
+                <br>&nbsp;<br>       
+                Click <a href="CSS_Flexbox.html">here</a> for next tutorial <br>
+                Click <a href="CSS_Size_List.html">here</a> for previous tutorial 
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;Delawebapp All rights reserved. <br>
+        Created by <b>Mehul Vaidya</b>
+    </footer>
+</body>
+
+</html>

@@ -1,68 +1,61 @@
-body {
-  background-color: #FFFFD2;
-}
-
 *{
   margin: 0px;
   padding: 0px;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  overflow-x: hidden;
 }
-
+html{
+  font-size: min(2.5vw,2.5vh);;
+}
+body {
+  background-color: #FFFFD2;
+}
 header {
   width: 100vw;
   background-color: #FFFFD2;
   text-align: center;
-  font-size: 5vh;
+  font-size: min(5vh,5vw);
 }
-
 nav {
   width: 100vw;
   background-color: #E2D1F9;
 }
-
 nav ul {
   list-style-type: none;
 }
-
 nav ul li {
   display: inline-block;
   padding-left: 2vw;
-  font-size: 3vh;
+  font-size: min(3vh,3vw);
 }
-
 nav ul li a {
   text-decoration: none;
 }
-
 main {
   background-color: #C5FAD5;
   height: 75vh;
 }
-
 main section { 
   background-color: #C5FAD5;
   text-align: left;
   height: 75vh;
 }
-
 main section article {
   background-color: #C5FAD5;
-  font-size: 3vh;
+  font-size: min(2.5vw,2.5vh);
   padding-left: 2vw;
   height: 75vh;
 }
-
 main section aside {
   width: 40vw;
   height: 10vh;
   background-color: gray;
   float: right;
 }
-
 footer {
   width: 100vw;
   background-color: #FFFFD2;
-  font-size: 3vh;
+  font-size: min(2.5vw,2.5vh);
   padding-left: 2vw;
   height: 10vh;
 }
